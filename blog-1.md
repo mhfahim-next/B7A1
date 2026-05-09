@@ -6,13 +6,6 @@ TypeScript adds static typing to JavaScript, helping developers catch errors bef
 
 To solve this issue, TypeScript introduced the `unknown` type, which is much safer for handling unpredictable or external data.`unknown` is a safer alternative for data whose type is not known yet. With `unknown`, TypeScript forces you to check the type before using the value.
 
-In this blog,What we will learn:
-- Why `any` is unsafe
-- Why `unknown` is safer
-
-
----
-
 When a variable uses `any`, TypeScript stops checking its type completely.
 
 ```ts
@@ -25,3 +18,11 @@ When a variable uses `unknown`, TypeScript forces you to check the type before u
 let value: unknown = "Hello";
 // Error
 value.toUpperCase();
+```
+----
+
+In this blog,What we will learn:
+- Why `any` is unsafe
+- Why `unknown` is safer
+
+
