@@ -19,6 +19,8 @@ When a variable uses `any`, TypeScript stops checking its type completely.
 let data: any = "Hello";
 data.toUpperCase();
 ```
+When a variable uses `unknown`, TypeScript forces you to check the type before using the value.
+
 ```ts
 let value: unknown = "Hello";
 // Error
